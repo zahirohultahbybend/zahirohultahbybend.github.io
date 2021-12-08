@@ -1056,7 +1056,7 @@ audio {
 	100% {
 		-ms-transform:translate(0px,0px);
 	}
-}o
+}
 @keyframes bannar_come {
 	0%{
 		transform:translate(0px,-1000px);
@@ -1080,39 +1080,46 @@ audio {
 	bottom: -200px;
 	opacity: 0.6;
 	z-index: 99;
-	width: 100px;
-	height: 183px;
+	width: 50px;
+	height: 100px;
 	background-repeat: no-repeat no-repeat;
-	background-size: 100px 183px;
+	background-size: 50px 100px;
 }
 .balloons h2 {
 	text-transform: uppercase;
 	font-family: 'Signika', sans-serif;
-	font-size: 50px;
+	font-size: 30px;
 	color: #BF4136;
 	text-shadow: 5px 5px 5px #FFF;
 	display: none;
 }
 #b1,#b11 {
-	background-image: url('b1.png');
+	background-image: url('b11.png');
+	left: 25.5px;
 }
 #b2,#b22 {
-	background-image: url('b2.png');
+	background-image: url('b22.png');
+	left: 70.5px !important;
 }
 #b3,#b33 {
-	background-image: url('b3.png');
+	background-image: url('b33.png');
+	left: 115.5px !important;
 }
 #b4,#b44{
-	background-image: url('b4.png');
+	background-image: url('b44.png');
+	left: 160.5px !important;
 }
 #b5,#b55{
-	background-image: url('b5.png');
+	background-image: url('b55.png');
+	left: 205.5px !important;
 }
 #b6,#b66{
-	background-image: url('b6.png');
+	background-image: url('b66.png');
+	left: 250.5px !important;
 }
 #b7,#b77{
-	background-image: url('b7.png');
+	background-image: url('b77.png');
+	left: 295.5px !important;
 }
 .balloons-rotate-behaviour-one {
 	-webkit-animation: balloons_rotate_one linear 10s infinite;
