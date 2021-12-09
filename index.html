@@ -67,6 +67,7 @@
     </style>
   </head>
   <body>
+    <!-- <audio id="ohayo" src="Ohayou.mp3" type="audio/mpeg" controls style="display: none;"></audio> -->
     <div class="bgimg">
       <div class="topleft">
         <p>Bendi Tandayu Saputra</p>
@@ -85,7 +86,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
   <script>
     // Mengatur waktu akhir perhitungan mundur
-    var countDownDate = new Date("Dec 10, 2021 00:00:00").getTime();
+    var countDownDate = new Date("Dec 10, 2021 02:00:00").getTime();
 
     // Memperbarui hitungan mundur setiap 1 detik
     var x = setInterval(function () {
@@ -110,7 +111,7 @@
       // Jika hitungan mundur selesai, tulis beberapa teks
       if (distance <= 0) {
         clearInterval(x);
-        document.location.href = "hbd.html";
+        // document.location.href = "hbd.html";
       }
     }, 1000);
   </script>

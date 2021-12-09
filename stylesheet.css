@@ -1095,7 +1095,7 @@ audio {
 }
 #b1,#b11 {
 	background-image: url('b11.png');
-	left: 25.5px;
+	left: 25.5px !important;
 }
 #b2,#b22 {
 	background-image: url('b22.png');
@@ -1267,7 +1267,7 @@ audio {
 	bottom: 0;
 	padding:10px 0px 10px 0px;
 }
-#play, #bannar_coming, #balloons_flying,#cake_fadein,#light_candle,#wish_message,#story {
+#play, #bannar_coming, #balloons_flying,#cake_fadein,#light_candle,#wish_message,#story, #doa {
 	display: none;
 }
 

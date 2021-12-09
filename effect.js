@@ -160,9 +160,19 @@ $('document').ready(function(){
 		$('.balloons').css('opacity','0.9');
 		$('.balloons h2').fadeIn(3000);
 		$(this).fadeOut('slow').delay(3000).promise().done(function(){
-			$('#story').fadeIn('slow');
+			$('#doa').fadeIn('slow');
 		});
 	});
+
+	$('#doa').click(function () {
+		var audio = $('.song')[0];
+        audio.stop()
+		var audio = $('.doaa')[0];
+        audio.play();
+		$(this).fadeOut('slow').delay(80000).promise().done(function(){
+			$('#story').fadeIn('slow');
+		});
+	})
 	
 	$('#story').click(function(){
 		$(this).fadeOut('slow');
