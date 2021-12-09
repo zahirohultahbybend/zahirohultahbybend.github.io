@@ -16,6 +16,14 @@ $('document').ready(function(){
 			$('#b77').animate({top:240, left: vw+250},500);
 		});
 
+	$('#btn_salam').click(function(){
+		var salam = $('.salam')[0];
+		salam.play();
+		$(this).fadeOut('slow').delay(4500).promise().done(function(){
+			$('#turn_on').fadeIn('slow');
+		});
+	});
+
 	$('#turn_on').click(function(){
 		$('#bulb_yellow').addClass('bulb-glow-yellow');
 		$('#bulb_red').addClass('bulb-glow-red');
@@ -166,10 +174,12 @@ $('document').ready(function(){
 
 	$('#doa').click(function () {
 		var audio = $('.song')[0];
-        audio.stop()
+        audio.pause()
 		var audio = $('.doaa')[0];
         audio.play();
 		$(this).fadeOut('slow').delay(80000).promise().done(function(){
+			var audio = $('.song')[0];
+        	audio.play();
 			$('#story').fadeIn('slow');
 		});
 	})
@@ -179,14 +189,18 @@ $('document').ready(function(){
 		$('.cake').fadeOut('fast').promise().done(function(){
 			$('.message').fadeIn('slow');
 		});
+
+		$(this).fadeOut('slow').delay(402800).promise().done(function(){
+			$('#send_message').fadeIn('slow');
+		});
 		
 		var i;
 
 		function msgLoop (i) {
-			$("p:nth-child("+i+")").fadeOut('slow').delay(800).promise().done(function(){
+			$("p:nth-child("+i+")").fadeOut('slow').delay(1800).promise().done(function(){
 			i=i+1;
-			$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
-			if(i==50){
+			$("p:nth-child("+i+")").fadeIn('slow').delay(2000);
+			if(i==111){
 				$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
 					$('.cake').fadeIn('fast');
 				});
