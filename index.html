@@ -87,7 +87,8 @@
   <script>
     $(window).load(function (e) {
       var siki = new Date().getTime();
-      var tanggalUltah = new Date("Dec 10, 2021 02:00:00").getTime();
+      // var tanggalUltah = new Date("Dec 10, 2021 02:00:00").getTime();
+      var tanggalUltah = new Date("Mar 10, 2022 02:00:00").getTime();
       var kacek = tanggalUltah - siki;
 
       if ( kacek < 0 ) {
@@ -95,7 +96,7 @@
       }
     })
     // Mengatur waktu akhir perhitungan mundur
-    var countDownDate = new Date("Dec 10, 2021 02:00:00").getTime();
+    var countDownDate = new Date("Mar 10, 2022 02:00:00").getTime();
 
     // Memperbarui hitungan mundur setiap 1 detik
     var x = setInterval(function () {
